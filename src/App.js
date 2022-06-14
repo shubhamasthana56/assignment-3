@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import Header from "./component/header";
+import CustomerInfo from "./component/customer-info";
+import ProductInfo from "./component/product-info";
+import OrderInfo from "./component/order-info";
+const App = ()=> {
+  const user = {
+    name:"Alan Ford",
+    userId:"00512163",
+    appointment:"(:00 (23-06-2022)",
+    email: "alan.ford@gmail.com",
+    phone: "+919837465234",
+    profileImage:"https://www.w3schools.com/howto/img_avatar.png",
+    productName: "Boltart bosbesson",
+    productDescription: "This is some random description about product",
+    order: [{status: "", Door: "", Time: ""}]
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <Header name={user.name} employeeId={user.userId}/>
+      <CustomerInfo appointment={user.appointment} email={user.email} phone={user.phone}/>
+      <OrderInfo order={user.order}/>
+      <ProductInfo image={user.profileImage} name={user.productName} description={user.productDescription}/>
+    </>
+  )
 }
 
 export default App;

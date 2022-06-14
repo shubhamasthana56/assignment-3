@@ -1,0 +1,9 @@
+.container {
+    border: 1px solid black;
+    padding: 20px;
+}
+
+.customer-info__label {
+    font-weight: bold;
+    padding-right: 5px;
+}

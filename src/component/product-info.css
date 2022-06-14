@@ -1,0 +1,9 @@
+.product-container {
+    border: 1px solid black;
+    margin-top: 10px;
+    padding: 20px;
+}
+.product-info__image {
+    height: 50px;
+    width: 50px;
+}

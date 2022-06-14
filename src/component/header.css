@@ -1,0 +1,13 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f9f9f9;
+}
+.header-info__name {
+    font-weight: bold;
+}
+.header-print {
+    background-color: black;
+    color: white;
+    margin-right: 5px;
+}
